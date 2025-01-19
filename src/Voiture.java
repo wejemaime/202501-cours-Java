@@ -36,7 +36,6 @@ public class Voiture {
             droiteOuGauche = "gauche";
         }
         System.out.println("La voiture tourne vers la " + droiteOuGauche+ " d'un angle de " + angle);
-        System.out.println("La voiture tourne vers la " + droiteOuGauche+ " d'un angle de " + angle);
     }
 
 }
