@@ -6,6 +6,7 @@ public class Voiture {
     boolean automatique;
     String couleur;
     int rapportCourant;
+    Moteur moteur;
 
     void klaxonner (){
         System.out.println("Tutut!");
@@ -36,6 +37,7 @@ public class Voiture {
             droiteOuGauche = "gauche";
         }
         System.out.println("La voiture tourne vers la " + droiteOuGauche+ " d'un angle de " + angle);
+
     }
 
 }
