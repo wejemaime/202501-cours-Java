@@ -5,13 +5,15 @@ public class HelloWorld {
         voitureDeMichel.nbPortes = 3;
         voitureDeMichel.automatique = true;
         voitureDeMichel.couleur ="verte";
+
         Voiture voitureDeJerome = new Voiture();
-        Moteur moteur = new Moteur();
-        moteur.carburation = "essence";
-        moteur.cylindre = 4;
         voitureDeJerome.nbPortes = 5;
         voitureDeJerome.automatique = false;
         voitureDeJerome.couleur ="bleu";
+
+        Moteur moteur = new Moteur();
+        moteur.carburation = "essence";
+        moteur.cylindre = 4;
 
         voitureDeJerome.moteur = moteur;
         voitureDeMichel.moteur = moteur;
