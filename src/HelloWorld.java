@@ -16,16 +16,12 @@ public class HelloWorld {
         voitureDeJerome.moteur = moteur;
         voitureDeMichel.moteur = moteur;
 
-        System.out.println("La voiture est" + voitureDeMichel.couleur+"elle a" + voitureDeMichel.nbPortes + "portes");
-
-        voitureDeMichel.klaxonner();
-
-        int nouvelleVitesse = voitureDeMichel.accellrer();
-        System.out.println("La vitesse de la voiture est de :" + nouvelleVitesse   );
-
-        int nouveauRapport = voitureDeMichel.passerRpport(true);
-        System.out.println("Le rapport est de :" + nouveauRapport);
-
-        voitureDeMichel.tounrner(false, 45);
+        Passager passager=new Passager();
+        passager.nom = "Dupont";
+        passager.prenom = "Leo";
+        Ville auckland = new Ville();
+        auckland.nom = "Auckland";
+        Ville destination=voitureDeMichel.transporter (passager,auckland);
+        System.out.println("Le passager est arrivé à la ville de "+ destination.nom);
     }
 }

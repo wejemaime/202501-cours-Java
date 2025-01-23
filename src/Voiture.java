@@ -1,5 +1,3 @@
-import javax.sql.rowset.serial.SQLOutputImpl;
-
 public class Voiture {
 
     int nbPortes = 5;
@@ -37,7 +35,15 @@ public class Voiture {
             droiteOuGauche = "gauche";
         }
         System.out.println("La voiture tourne vers la " + droiteOuGauche+ " d'un angle de " + angle);
+    }
 
+    Ville transporter (Passager passager, Ville villeDeDepart){
+        System.out.println("Je transporte un passager nommé : "+passager.prenom+" "+passager.nom);
+        System.out.println("Le passager est pasrtie de la ville de "+ villeDeDepart.nom);
+
+        Ville villeDeDestination = new Ville();
+        villeDeDestination.nom = "Schelter";
+        return villeDeDestination;
     }
 
 }
