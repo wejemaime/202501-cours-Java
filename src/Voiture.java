@@ -7,6 +7,9 @@ public class Voiture {
     int rapportCourant;
     Moteur moteur;
 
+    Voiture(){
+        System.out.println("coucou");
+    }
 
     void klaxonner (){
         System.out.println("Tutut!");
