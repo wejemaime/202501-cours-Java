@@ -7,14 +7,7 @@ public class Voiture {
     int rapportCourant;
     Moteur moteur;
 
-    Voiture(){
-        System.out.println("une voiture par defaut est en cours de construction");
-    }
 
-    Voiture(String couleur, int nbPortes){
-        this.couleur = couleur;
-        System.out.println("une voiture de couleur "+couleur +" avec "+nbPortes+" est en cours de construction");
-    }
 
     void klaxonner (){
         System.out.println("Tutut!");
