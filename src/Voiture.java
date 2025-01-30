@@ -1,46 +1,25 @@
 public class Voiture {
 
     int nbPortes = 5;
-    static int nbroue = 4;
     boolean automatique;
     String couleur;
-    int rapportCourant;
     Moteur moteur;
 
     Voiture(){
-        System.out.println("coucou");
+        System.out.println("une voiture par defaut est en cours de construction");
     }
 
-    void klaxonner (){
-        System.out.println("Tutut!");
+    Voiture(String couleur, int nbPortes){
+        this.couleur = couleur;
+        System.out.println("une voiture de couleur "+couleur +" avec "+nbPortes+" est en cours de construction");
     }
 
-    int accellrer () {
-        System.out.println("J'accelère");
-        return 100;
-    }
 
-    int passerRpport(boolean augumenter){
-        if (augumenter){
-            rapportCourant++;
-        }
-        else{
-            rapportCourant--;
-        }
-        return rapportCourant;
-    }
 
-    void tounrner(boolean droite, int angle){
-        String droiteOuGauche = null;
 
-        if (droite){
-            droiteOuGauche = "droite";
-        }
-        else{
-            droiteOuGauche = "gauche";
-        }
-        System.out.println("La voiture tourne vers la " + droiteOuGauche+ " d'un angle de " + angle);
-    }
+
+
+
 
     Ville transporter (Passager passager, Ville villeDeDepart){
         System.out.println("Je transporte un passager nommé : "+passager.prenom+" "+passager.nom);
