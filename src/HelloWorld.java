@@ -11,6 +11,13 @@ public class HelloWorld {
         voitureDeJerome.automatique = false;
         voitureDeJerome.couleur ="bleu";
 
+        System.out.println("nombre de porte de jeje"+voitureDeJerome.nbPortes);
+
+        Voiture voitureDeBenoit = new Voiture();
+        voitureDeBenoit.nbPortes = 5;
+        voitureDeBenoit.automatique = false;
+        voitureDeBenoit.couleur ="bleu";
+
         Moteur moteur = new Moteur();
         moteur.carburation = "essence";
         moteur.cylindre = 4;

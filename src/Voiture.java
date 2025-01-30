@@ -8,7 +8,6 @@ public class Voiture {
     Moteur moteur;
 
 
-
     void klaxonner (){
         System.out.println("Tutut!");
     }
